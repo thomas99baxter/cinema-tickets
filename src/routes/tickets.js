@@ -8,7 +8,7 @@ export function ticketRoutes (app) {
     } catch (err) {
       return res.status(err.statusCode).json({
         code: err.statusCode || 500,
-        message: err.message,
+        message: err.message
       })
     }
   })
